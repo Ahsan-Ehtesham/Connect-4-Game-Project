@@ -42,6 +42,10 @@ header {
 /**** MOBILE ****/
 
 @media only screen and (max-width: 768px) {
+  header{
+    font-size: 25px;
+  }
+
   #alertsContainer {
     width: 90%;
   }
@@ -61,7 +65,7 @@ header {
     font-size: 10px !important;
   }
 
-  #winningalert{
+  #winningAlert{
     display: flex;
     justify-content: center;
     align-content: center;
