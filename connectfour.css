@@ -62,11 +62,20 @@ header {
   }
 
   #winningalert{
-    font-size: 8px !important;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: 0 auto;
   }
 
   canvas {
     width: 100%;
     margin-left: 40px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: 0 auto;
   }
 }
