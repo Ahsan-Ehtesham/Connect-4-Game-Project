@@ -46,6 +46,11 @@ header {
     font-size: 25px;
   }
 
+  .absolute-center{
+    width: 150px;
+    height: 150px;
+  }
+
   #alertsContainer {
     width: 90%;
   }
