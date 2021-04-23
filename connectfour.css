@@ -66,6 +66,7 @@ header {
   }
 
   #winningAlert{
+    font-size: 8px !important;
     display: flex;
     justify-content: center;
     align-content: center;
