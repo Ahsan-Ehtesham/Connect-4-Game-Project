@@ -106,11 +106,17 @@
         animation: moveInBottom 5s ease-out;
         animation-fill-mode: backwards;
     }
+
+    @media (max-width: 767px) {
+        .logo{
+            width: 150px;
+        }
+    }
 </style>
 
 <body>
     <div class="absolute-center" id="floating">
-        <img src="Front-Logo-1.png">
+        <img class="logo" src="Front-Logo-1.png">
     </div>
 
     <div class="button">
