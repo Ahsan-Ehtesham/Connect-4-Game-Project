@@ -42,10 +42,6 @@ header {
 /**** MOBILE ****/
 
 @media only screen and (max-width: 768px) {
-  #settings-box {
-    padding: 0px 0px 30px 50px;
-  }
-
   #alertsContainer {
     width: 90%;
   }
@@ -65,8 +61,12 @@ header {
     font-size: 10px !important;
   }
 
+  #winningalert{
+    font-size: 8px !important;
+  }
+
   canvas {
     width: 100%;
-    margin-left: 30px;
+    margin-left: 40px;
   }
 }
