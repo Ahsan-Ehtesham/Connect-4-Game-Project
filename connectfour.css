@@ -67,11 +67,6 @@ header {
 
   #winningAlert{
     font-size: 8px !important;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    margin: 0 auto;
   }
 
   canvas {
