@@ -1,0 +1,72 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  text-align: center;
+  margin: 15px 0px 40px 0px;
+}
+
+#alertsContainer {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center;
+  margin: 0 auto;
+}
+
+#winningAlert {
+  text-align: center;
+  margin-bottom: 5px;
+  display: none;
+  font-size: 18px;
+}
+
+#waitingAlert {
+  margin-bottom: 5px;
+  display: none;
+}
+
+#scoreAlert {
+  margin-bottom: 5px;
+  font-size: 15px;
+  color: white;
+}
+
+#boardGame {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center;
+  margin: 0 auto;
+}
+
+/**** MOBILE ****/
+
+@media only screen and (max-width: 768px) {
+  #settings-box {
+    padding: 0px 0px 30px 50px;
+  }
+
+  #alertsContainer {
+    width: 90%;
+  }
+
+  #alertsContainer {
+    width: 100%;
+    margin-bottom: 0px;
+  }
+
+  #scoreAlert {
+    padding: 10px 5px;
+    font-size: 13px;
+  }
+
+  #waitingAlert {
+    margin-bottom: 0px;
+    font-size: 10px !important;
+  }
+
+  canvas {
+    width: 100%;
+    margin-left: 30px;
+  }
+}

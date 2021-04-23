@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect4</title>
+</head>
+<style>
+    body {
+        background-image: radial-gradient(circle, #0277be, rgb(20, 1, 90));
+    }
+
+    div.absolute-center {
+        opacity: 1;
+        visibility: visible;
+        transition: all .5s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    #floating {
+        animation-name: floating;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+
+    }
+
+    @keyframes floating {
+        0% {
+            transform: translate(0, 0px);
+        }
+
+        50% {
+            transform: translate(0, 25px);
+        }
+
+        100% {
+            transform: translate(0, -0px);
+        }
+    }
+
+    .button {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center;
+        margin: 0 auto;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: sans-serif;
+    }
+
+    .btn:link,
+    .btn:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 22px 50px;
+        display: inline-block;
+        border-radius: 100px;
+        transition: all .2s;
+        position: absolute;
+    }
+
+    .btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn:active {
+        transform: translateY(-1px);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn-white {
+        background-color: #fff;
+        color: #444;
+    }
+
+    .btn::after {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 100px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all .4s;
+    }
+
+    .btn-white::after {
+        background-color: #fff;
+    }
+
+    .btn:hover::after {
+        transform: scaleX(1.4) scaleY(1.6);
+        opacity: 0;
+    }
+
+    .btn-animated {
+        animation: moveInBottom 5s ease-out;
+        animation-fill-mode: backwards;
+    }
+</style>
+
+<body>
+    <div class="absolute-center" id="floating">
+        <img src="Front-Logo-1.png">
+    </div>
+
+    <div class="button">
+        <a href="game.html" class="btn btn-white btn-animate">Start Game</a>
+    </div>
+</body>
+
+</html>
