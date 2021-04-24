@@ -44,88 +44,84 @@
         }
     }
 
-    .button {
-        display: flex !important;
-        justify-content: center !important;
-        align-items: center;
-        margin: 0 auto;
-        font-size: 20px;
-        font-weight: bold;
-        font-family: sans-serif;
-    }
-
-    .btn:link,
-    .btn:visited {
-        text-transform: uppercase;
-        text-decoration: none;
-        padding: 22px 50px;
-        display: inline-block;
-        border-radius: 100px;
-        transition: all .2s;
-        position: absolute;
-    }
-
-    .btn:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    }
-
-    .btn:active {
-        transform: translateY(-1px);
-        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    }
-
-    .btn-white {
-        background-color: #fff;
-        color: #444;
-    }
-
-    .btn::after {
-        content: "";
-        display: inline-block;
-        height: 100%;
-        width: 100%;
-        border-radius: 100px;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -1;
-        transition: all .4s;
-    }
-
-    .btn-white::after {
-        background-color: #fff;
-    }
-
-    .btn:hover::after {
-        transform: scaleX(1.4) scaleY(1.6);
-        opacity: 0;
-    }
-
-    .btn-animated {
-        animation: moveInBottom 5s ease-out;
-        animation-fill-mode: backwards;
-    }
-
     @media (max-width: 767px) {
         .logo{
             width: 300px;
-            margin-top: 30px;
+            margin-top: 15px;
         }
-        .button{
+        .wrapper{
             padding: 15px 30px;
-            margin-top: 50px;
+            margin-top: 60px;
         }
     }
+
+
+
+.wrapper{
+
+  float: left;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+      
+}
+.button{
+  display:inline-block;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: sans-serif;
+  width: 280px;
+  height: 60px;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+}
+.btn-hover {
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+    background-position: 100% 0;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+    outline: none;
+}
+
+.btn-hover.color-1 {
+    background-image: linear-gradient(to right, #25aae1, #c45959, #922735, #6b0b10);
+    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+}
+  
 </style>
 
 <body>
-    <div class="absolute-center" id="floating">
+     <div class="absolute-center" id="floating">
         <img class="logo" src="Front-Logo-1.png">
     </div>
 
-    <div class="button">
-        <a href="game.html" class="btn btn-white btn-animate">Start Game</a>
+    <div class="wrapper">
+      <a href="player.html">  <button class="button btn-hover color-1">Player Vs Player</button> </a>
+      <a href="game.html"> <button class="button btn-hover color-1">Player Vs Ai</button> </a>
     </div>
 </body>
 
