@@ -27,11 +27,6 @@ header {
   justify-content: center !important;
   align-items: center;
   margin: 0 auto;
-  /* position: absolute;
-  top: 4rem;
-  left: 50%; */
-  /* -webkit-transform: translate(-50%); */
-  /* transform: translate(-50%); */
   width: 380px;
   height: 330px;
   background: #0277bd;
@@ -57,15 +52,7 @@ table {
 .reset {
   display: flex;
   font-weight: bold;
-  /* position: absolute; */
-  /* top: 95vh; */
-  /* left: 50%; */
-  /* -webkit-transform: translate(-50%); */
-  /* transform: translate(-50%); */
-  /* background-color: black; */
   margin: 55px 0px 40px 0px;
-  /* color: white; */
-  /* width: 5rem; */
   text-align: center;
 }
 
