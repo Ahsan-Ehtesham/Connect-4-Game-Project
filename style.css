@@ -48,8 +48,17 @@ table {
   cursor: pointer;
 }
 
-.reset {
+/* .reset {
   display: flex;
+  font-weight: bold;
+  margin: 55px 0px 40px 0px;
+  text-align: center;
+} */
+
+.btn_set {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-weight: bold;
   margin: 55px 0px 40px 0px;
   text-align: center;
@@ -70,12 +79,12 @@ table {
     padding: 1.5rem;
     border: 1px solid black;
   }
-  
+
   table {
     border-spacing: 1px;
     border-collapse: separate;
   }
-  
+
   .slot {
     width: 28px;
     padding: 1.25rem;
