@@ -66,7 +66,7 @@ CanvasBoard.prototype.initBoard = function () {
 
   createjs.Ticker.addEventListener("tick", board.stage);
 };
-
+// Reset board
 CanvasBoard.prototype.resetBoard = function () {
   var board = this;
   _.forEach(board.matrixBoard, function (row, rowIndex) {
@@ -106,7 +106,7 @@ CanvasBoard.prototype.refreshBoard = function () {
     });
   });
 };
-
+// Move Placement
 CanvasBoard.prototype.placeMove = function (player, columnMove, newBoard) {
   var board = newBoard ? new CanvasBoard(this.matrixBoard) : this;
   for (var i = Config.ROWS_SIZE - 1; i >= 0; i--) {
@@ -138,7 +138,7 @@ CanvasBoard.prototype.isFull = function () {
   }
   return !atLeastOneEmpty;
 };
-
+// Score Method
 CanvasBoard.prototype.getScore = function () {
   var board = this;
 

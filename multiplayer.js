@@ -11,13 +11,13 @@ for (let i = 0; i < tableCell.length; i++) {
     console.log(`${e.target.parentElement.rowIndex},${e.target.cellIndex}`);
   });
 }
-
+// First player
 while (!player1) {
   var player1 = prompt("Player One: Enter your name. You will be red.");
 }
 
 player1Color = "red";
-
+// Second player
 while (!player2) {
   var player2 = prompt("Player Two: Enter your name. You will be yellow.");
 }
@@ -31,7 +31,7 @@ Array.prototype.forEach.call(tableCell, (cell) => {
   cell.addEventListener("click", changeColor);
   cell.style.backgroundColor = "white";
 });
-
+// Game winning comments
 function changeColor(e) {
   let column = e.target.cellIndex;
   let row = [];
@@ -79,11 +79,11 @@ function changeColor(e) {
       }
     }
   }
-
+  // color matching check condition
   function colorMatchCheck(one, two, three, four) {
     return one == two && one === three && one === four && one !== "white";
   }
-
+  // Horizontal Check
   function horizontalCheck() {
     for (let row = 0; row < tableRow.length; row++) {
       for (let col = 0; col < 4; col++) {
@@ -100,6 +100,7 @@ function changeColor(e) {
       }
     }
   }
+  // Vertical Check
   function verticalCheck() {
     for (let col = 0; col < 7; col++) {
       for (let row = 0; row < 3; row++) {
@@ -116,7 +117,7 @@ function changeColor(e) {
       }
     }
   }
-
+  // Diagonal Check
   function diagonalCheck1() {
     for (let col = 0; col < 4; col++) {
       for (let row = 0; row < 3; row++) {
@@ -150,7 +151,7 @@ function changeColor(e) {
       }
     }
   }
-
+  // Draw Check
   function drawCheck() {
     let fullSlot = [];
     for (let i = 0; i < tableCell.length; i++) {

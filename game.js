@@ -3,7 +3,7 @@ function Game() {
   this.computerIsThinking = false;
   this.Board = new CanvasBoard(null, this);
 }
-
+// Human move
 Game.prototype.placeHumanMove = function (evt) {
   var Game = this;
 
@@ -16,7 +16,7 @@ Game.prototype.placeHumanMove = function (evt) {
     Game.switchTurn();
   }
 };
-
+// AI Move
 Game.prototype.generateComputerMove = function () {
   var game = this;
 
@@ -46,7 +46,7 @@ Game.prototype.generateComputerMove = function () {
 
   return deferred.promise();
 };
-
+// Reset Game
 Game.prototype.resetGame = function () {
   this.Board.resetBoard();
   this.turn = Config.HUMAN_PLAYER;
@@ -55,7 +55,7 @@ Game.prototype.resetGame = function () {
   document.getElementById("score").innerHTML = 0;
   this.Board.enableClick();
 };
-
+// Switch turns
 Game.prototype.switchTurn = function () {
   var game = this;
   game.Board.refreshBoard();
